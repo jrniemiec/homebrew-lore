@@ -5,21 +5,21 @@
 class Lore < Formula
   desc "Terminal-first AI chat for daily LLM work"
   homepage "https://github.com/jrniemiec/lore"
-  version "0.9.4"
+  version "0.9.5"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/jrniemiec/lore/releases/download/v0.9.4/lore_0.9.4_darwin_amd64.tar.gz"
-    sha256 "38217ddc7114c4398a89e9e8195ecab6d9a6df77bb429d3b90e2085f5e6201c3"
+    url "https://github.com/jrniemiec/lore/releases/download/v0.9.5/lore_0.9.5_darwin_amd64.tar.gz"
+    sha256 "395469e4b6049f92455d978310bd8988407f873834bc92e8146ae9af3051bd69"
 
     define_method(:install) do
       bin.install "lore"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/jrniemiec/lore/releases/download/v0.9.4/lore_0.9.4_darwin_arm64.tar.gz"
-    sha256 "acf1ec66c6bf8169fc1e8a250ec13d0c0842a9470528b8114203964e8ebc84cd"
+    url "https://github.com/jrniemiec/lore/releases/download/v0.9.5/lore_0.9.5_darwin_arm64.tar.gz"
+    sha256 "fe57d2768d03599d1c37cbbbab810f8ee4d367e803a0ccb2f76e8242d8ca1c46"
 
     define_method(:install) do
       bin.install "lore"
